@@ -9,7 +9,6 @@ with open(os.getenv('HOME') + '/.git-token-gen-json') as f:
     f.close()
 
 token = token.rstrip("\n")
-print("token: ", token)
 
 # or using an access token
 g = Github(token)
